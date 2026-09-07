@@ -17,11 +17,13 @@ export default function Modal({ onAdd }: props) {
     setDescription("");
   };
 
-  const titleOnchange = (event: any) => {
+  const titleOnchange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setTitle(event.target.value);
   };
 
-  const descriptionOnchang = (event: any) => {
+  const descriptionOnchang = (
+    event: React.ChangeEvent<HTMLTextAreaElement>,
+  ) => {
     setDescription(event.target.value);
   };
 
