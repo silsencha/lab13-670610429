@@ -23,4 +23,20 @@ export const router = createBrowserRouter([
       { path: "todolistpage", element: <TodolistPage /> },
     ],
   },
+
+  {
+    path: "/",
+    element: <MainLayout />,
+    errorElement: <ErrorPage />,
+    children: [{ index: true, element: <HomePage /> }],
+  },
+
+  {
+    path: "/my",
+    element: <MainLayout />,
+    errorElement: <ErrorPage />,
+    children: [
+      /* ... */
+    ],
+  },
 ]);
